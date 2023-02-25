@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Telegram-chat-js</title>
+	<link rel="stylesheet" href="telegram-chat/telegram-chat.css">
+</head>
+
+<body>
+	<img class="chat__btn" src="telegram-chat/images/chat.svg" alt="icon chat" title="write to the chat">
+
+
+	<script src="telegram-chat/axios.min.js"></script>
+	<script src="telegram-chat/telegram-chat.js"></script>
+	<script>
+		document.querySelector('.chat__btn').addEventListener('click', e => {
+			new TelegramChat().open();
+		})
+
+	</script>
+</body>
+
+</html>
